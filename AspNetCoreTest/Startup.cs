@@ -25,7 +25,7 @@ namespace AspNetCoreTest
         {
             services.AddMvc();
             // add connection
-            services.AddDbContext<TestDbContext>(options => options.UseSqlServer(@"data source=someaddress;initial catalog=testcoredb;user id=testuser;password=testpass;integrated security=false"));
+            services.AddDbContext<TestDbContext>(options => options.UseSqlServer(@"data source=ipaddress;initial catalog=testingdbcore;user id=username;password=password;integrated security=false;"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
